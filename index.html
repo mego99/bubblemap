@@ -11,7 +11,7 @@
   path {
     stroke:black;
     fill: none;
-    
+
   }
   </style>
 </head>
@@ -27,7 +27,7 @@
       .attr("width",width)
       .attr("height",height);
 
-    d3.json("build/counties.json",function(error,us){
+    d3.json("build/states.json",function(error,us){
       if (error) return console.error(error);
 
       svg.append("path")
